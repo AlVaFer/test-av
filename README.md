@@ -1,5 +1,6 @@
 #  Test FrontEnd * Álvaro Vallejos  (BCNC Group)
 
+<br>
 
 ## Author notes
 
@@ -12,15 +13,15 @@ In order to use the service Cors Anywhere actually we need to visit [https://cor
 ***************************
 
 
-This project is a Single Page Application programmed in React and is divided in three screens: In the main screen you can watch a list of the 100 most popular Apple podcasts. The second one is a detail page of each podcast and a list of the tracks. The third is a detail page of each track and here you can listen the audio of the podcast and read about its content.
+This project is a Single Page Application programmed in React and presents three screens: In the main screen you can watch a list of the 100 most popular Apple podcasts, also you can filter them using the textbox and see in a badge the count of results. The second screen is a detail page of the selected podcast and a list of its tracks. The third is a detail page of the selected track and here you can listen the audio of the podcast and read about its content.
 
 Almost each component has been styled with a different technique (sass, styled components, mui, bootstrap, etc). The design of the screens are responsive.
 
 The deploy offers two possible modes: optimized and minified or not minified-optimized. 
 
-I've made documentation with JSDoc for some components. You can read it opening the file documents/index.html or in [https://github.com/AlVaFer/test-av/blob/master/documents/index.html/](DOCUMENTS).
+I've made documentation with JSDoc for some components. You can read it opening the file documents/index.html downloading the whole documents folder. 
 
-
+<br>
 
 ## Technologies 
 
@@ -41,6 +42,8 @@ I've made documentation with JSDoc for some components. You can read it opening 
 * Prettier
 * Babel
 
+<br>
+
 ## Structure of app folder
 
 * **pages**: React components composed by several components, this is the upper level. Use custom hooks, the store and have their own states. 
@@ -56,6 +59,7 @@ I've made documentation with JSDoc for some components. You can read it opening 
 * **routers**: React routing components.
 * **shared**: Common constants and helpers.
 
+<br>
 
 ##  Scripts:
 
@@ -87,6 +91,8 @@ To generate them:
 
 * `npm run jsdoc` 
 
+<br>
+
 
 ## Screenshots
 
@@ -97,24 +103,24 @@ To generate them:
 
 <br>
 <p align="center">
-<img width="95%" src="https://github.com/AlVaFer/test-av/blob/master/screenshots/2.png"\>
+<img width="95%" src="https://raw.githubusercontent.com/AlVaFer/test-av/main/screenshots/2.png"\>
 
 <br>
 <p align="center">
-<img width="95%" src="https://github.com/AlVaFer/test-av/blob/master/screenshots/3.png"\>
+<img width="95%" src="https://raw.githubusercontent.com/AlVaFer/test-av/main/screenshots/3.png"\>
 
 <br>
 <p align="center">
-<img width="95%" src="https://github.com/AlVaFer/test-av/blob/master/screenshots/4.png"\>
+<img width="95%" src="https://raw.githubusercontent.com/AlVaFer/test-av/main/screenshots/4.png"\>
 
 <br>
 <p align="center">
-<img width="95%" src="https://github.com/AlVaFer/test-av/blob/master/screenshots/5.png"\>
+<img width="95%" src="https://raw.githubusercontent.com/AlVaFer/test-av/main/screenshots/5.png"\>
 
 <br>
 <p align="center">
-<img width="95%" src="https://github.com/AlVaFer/test-av/blob/master/screenshots/6.png"\>
+<img width="95%" src="https://raw.githubusercontent.com/AlVaFer/test-av/main/screenshots/6.png"\>
 
 <br>
 <p align="center">
-<img width="95%" src="https://github.com/AlVaFer/test-av/blob/master/screenshots/7.png"\>
+<img width="95%" src="https://raw.githubusercontent.com/AlVaFer/test-av/main/screenshots/7.png"\>
