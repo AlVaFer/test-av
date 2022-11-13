@@ -92,7 +92,7 @@ To generate them:
 
 <br>
 <p align="center">
-<img width="95%" src="https://github.com/AlVaFer/test-av/blob/master/screenshots/1.png"\>
+<img width="95%" src="https://raw.githubusercontent.com/AlVaFer/test-av/main/screenshots/1.png"\>
 
 
 <br>
