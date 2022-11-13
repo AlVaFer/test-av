@@ -1,0 +1,10 @@
+{
+  "title": "Podcaster",
+  "sidedCard.by": "By",
+  "sidedCard.description": "Description: ",
+  "podcasts.author": "Author: ",
+  "search": "Filter podcasts...",
+  "episodes.title": "Title",
+  "episodes.date": "Date",
+  "episodes.duration": "Duration"
+}
