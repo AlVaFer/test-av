@@ -1,0 +1,9 @@
+{
+  "short_name": "Test Alvaro VF",
+  "name": "Create React",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
