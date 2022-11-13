@@ -19,7 +19,7 @@ Almost each component has been styled with a different technique (sass, styled c
 
 The deploy offers two possible modes: optimized and minified or not minified-optimized. 
 
-I've made documentation with JSDoc for some components. You can read it opening the file documents/index.html downloading the whole documents folder. 
+I have made tests and documentation with JSDoc for some components. You can read it opening the file documents/index.html downloading the whole documents folder. 
 
 <br>
 
