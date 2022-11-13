@@ -1,0 +1,89 @@
+{
+  "name": "podcast-test-alvaro-vf",
+  "version": "1.0.1",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-jest": "^29.3.1",
+    "babel-loader": "^8.2.5",
+    "concurrently": "^7.2.2",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-watch-typeahead": "^0.6.5",
+    "jsdoc": "^3.6.7",
+    "mini-css-extract-plugin": "^2.6.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.50.1",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.2",
+    "@mui/material": "^5.8.2",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@tanstack/react-query": "^4.10.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^14.2.0",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/runtime": "^7.17.9",
+    "linkify-react": "^4.0.2",
+    "i18next": "^21.3.3",
+    "linkifyjs": "^4.0.2",
+    "dotenv-webpack": "^7.1.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-i18next": "^11.12.0",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.6",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "dev": "webpack-dev-server --env development",
+    "prod": "webpack-dev-server --env production",
+    "build": "webpack --env production",
+    "analyze": "webpack --env production --analyze",
+    "test": "jest --watchAll=true --verbose=false --coverage=false --reporters=default",
+    "test:ci": "jest --ci --coverage=false",
+    "lint": "eslint --ext js,jsx src/ && stylelint src/**/*.scss",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc.js",
+    "jsdoc": "jsdoc -c jsdoc.json"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "resetMocks": false,
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    }
+  }
+}
