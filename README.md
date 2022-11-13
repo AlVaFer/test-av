@@ -8,7 +8,7 @@ IMPORTANT:
 
 ***************************
 
-In order to use the service Cors Anywhere actually we need to visit [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere-herokuapp.com/corsdemo) and click on the "Request temporary access to the demo server" button to temporarily init or restore the full functionality of CORS Anywhere for your client only.
+In order to use the service Cors Anywhere actually we need to visit [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo) and click on the "Request temporary access to the demo server" button to temporarily init or restore the full functionality of CORS Anywhere for your client only.
 
 ***************************
 
