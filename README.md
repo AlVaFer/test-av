@@ -46,7 +46,7 @@ I've made documentation with JSDoc for some components. You can read it opening 
 
 ## Structure of app folder
 
-* **pages**: React components composed by several components, this is the upper level. Use custom hooks, the store and have their own states. 
+* **pages**: React components composed by several components, this is the upper level. They use custom hooks, the store and have their own states. 
 * **containers**: React components used in several components.
 * **components**: React components. 
 * **components/children**: Children components.
@@ -67,11 +67,11 @@ I've made documentation with JSDoc for some components. You can read it opening 
 
 * `npm i`
 
-### Run in development mode (not minified by webpack)
+### Run in development mode (not minified and optimized by webpack)
 
 * `npm run dev`
 
-### Run in production mode (minified by webpack)
+### Run in production mode (minified and optimized by webpack)
 
 * `npm run prod`
 
