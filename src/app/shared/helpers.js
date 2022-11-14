@@ -3,7 +3,7 @@
  * @param {Date} - Date in ISO format
  * @returns {String} - Date in format DD/MM/YYYY
  */
-export function dateFormat(isoDate) {
+export function dateFormat (isoDate) {
   const date = new Date(isoDate)
   return date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear()
 }
@@ -13,6 +13,6 @@ export function dateFormat(isoDate) {
  * @param {String} - Time in milliseconds
  * @returns {String} - Time in format HH:MM:SS
  */
-export function millisToTime(millis) {
+export function millisToTime (millis) {
   return new Date(millis).toISOString().slice(11, 19)
 }

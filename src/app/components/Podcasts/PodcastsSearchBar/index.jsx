@@ -37,25 +37,25 @@ const PodcastsSearchBar = ({ data, setFilteredPodcasts, filteredPodcasts }) => {
   }, [searchValue, data, setFilteredPodcasts])
 
   return (
-    <div className="searchbar">
+    <div className='searchbar'>
       <Badge
-        name="badge"
+        name='badge'
         badgeContent={filteredPodcasts?.length}
-        color="primary"
+        color='primary'
         showZero
         sx={{ '& .MuiBadge-badge': { fontSize: 20, height: 25 } }}
         max={200}
-        data-testid="badge"
+        data-testid='badge'
       />
       <TextField
-        name="input-search"
-        type="text"
-        variant="outlined"
-        underline="none"
+        name='input-search'
+        type='text'
+        variant='outlined'
+        underline='none'
         placeholder={t('search')}
         onChange={(e) => setSearchValue(e.target.value)}
         inputProps={{ 'aria-label': 'textbox-search' }}
-        data-testid="input-search"
+        data-testid='input-search'
       />
     </div>
   )

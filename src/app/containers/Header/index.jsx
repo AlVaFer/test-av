@@ -4,8 +4,7 @@ import { useTranslation } from 'react-i18next'
 
 import CircularProgress from '@mui/material/CircularProgress'
 
-import { NavWrapper } from './styles'
-import { Title } from './styles'
+import { NavWrapper, Title } from './styles'
 
 const Header = () => {
   const { t } = useTranslation()
@@ -14,12 +13,12 @@ const Header = () => {
   return (
     <header>
       <NavWrapper>
-        <Link to="/" style={{ textDecoration: 'none' }}>
-          <Title bold font={'big'}>
+        <Link to='/' style={{ textDecoration: 'none' }}>
+          <Title bold font='big'>
             {t('title')}
           </Title>
         </Link>
-        {loading.loading && <CircularProgress color="primary" />}
+        {loading.loading && <CircularProgress color='primary' />}
       </NavWrapper>
     </header>
   )

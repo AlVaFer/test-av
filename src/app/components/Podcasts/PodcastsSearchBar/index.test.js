@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @jest-environment jsdom */
 import '@testing-library/jest-dom'
 import { fireEvent, render, screen } from '@testing-library/react'
@@ -9,21 +10,20 @@ import reducer, { setLoading } from '../../../store/features/loading'
 import PodcastSearchBar from './'
 import mock from './mock.json'
 
-jest.mock('react-i18next')
 const mockSetFilteredPodcasts = jest.fn()
 
 const reduxState = {
-  loading: false,
+  loading: false
 }
 
-function hasInputValue(e, inputValue) {
+function hasInputValue (e, inputValue) {
   return screen.getByDisplayValue(inputValue) === e
 }
 
 const props = {
   data: mock,
   setFilteredPodcasts: mockSetFilteredPodcasts,
-  filteredPodcasts: [],
+  filteredPodcasts: []
 }
 
 describe('<PodcastSearchBar/>', () => {
@@ -73,7 +73,6 @@ describe('<PodcastSearchBar/>', () => {
     expect(hasInputValue(input, 'J')).toBe(true)
     expect(mockSetFilteredPodcasts).toBeCalledTimes(2)
     expect(mockSetFilteredPodcasts).toBeCalledWith(mock.feed.entry)
-    const badgeValue = await screen.getByTestId('badge').textContent
   })
 
   test('Badge initial value', async () => {
@@ -87,7 +86,7 @@ describe('<PodcastSearchBar/>', () => {
     expect(reducer(undefined, setLoading(false))).toEqual(reduxState)
     expect(reducer(undefined, setLoading(true))).toEqual({
       ...reduxState,
-      loading: true,
+      loading: true
     })
   })
 
@@ -95,7 +94,7 @@ describe('<PodcastSearchBar/>', () => {
     setup()
     const user = userEvent.setup()
     const textBox = screen.getByRole('textbox', {
-      name: /textbox-search/i,
+      name: /textbox-search/i
     })
 
     await user.clear(textBox)

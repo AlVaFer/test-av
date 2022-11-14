@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
 import usePodcasts from '../../components/Podcasts/usePodcasts'
@@ -18,17 +18,17 @@ export const Podcasts = () => {
   }, [isLoading, dispatch])
 
   return (
-    <div className="podcasts">
-      <div className="podcasts__searchbar">
+    <div className='podcasts'>
+      <div className='podcasts__searchbar'>
         <PodcastsSearchBar
           data={data ?? []}
           setFilteredPodcasts={setFilteredPodcasts}
           filteredPodcasts={filteredPodcasts}
         />
       </div>
-      <div className="podcasts__list">
-        {filteredPodcasts?.map((podcast) => (
-          <PodcastsListItem podcast={podcast} />
+      <div className='podcasts__list'>
+        {filteredPodcasts?.map((podcast, i) => (
+          <PodcastsListItem key={i} podcast={podcast} />
         ))}
       </div>
     </div>

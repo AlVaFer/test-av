@@ -12,7 +12,7 @@ export const usePodcasts = () => {
     }
   }, [])
   const { isLoading, data, error } = useQuery(['podcasts'], fetchPodcasts, {
-    staleTime: oneDay,
+    staleTime: oneDay
   })
   return { isLoading, data, error }
 }

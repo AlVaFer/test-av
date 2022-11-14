@@ -17,7 +17,7 @@ export const usePodcastDetail = () => {
     ['tracks', podcastId],
     fetchTracks,
     {
-      staleTime: oneDay,
+      staleTime: oneDay
     }
   )
   return { isLoading, data, error }

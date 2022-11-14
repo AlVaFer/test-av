@@ -5,17 +5,17 @@ export const styles = {
     width: '100%',
     padding: '1rem',
     boxShadow,
-    minHeight: '20rem',
+    minHeight: '20rem'
   },
   cardContent: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column'
   },
   cardmedia: {
     marginTop: '2rem',
     boxShadow,
-    borderRadius: '2rem',
-  },
+    borderRadius: '2rem'
+  }
 }
 
 export const linkifyOptions = {
@@ -28,6 +28,6 @@ export const linkifyOptions = {
           {content}
         </a>
       )
-    },
-  },
+    }
+  }
 }

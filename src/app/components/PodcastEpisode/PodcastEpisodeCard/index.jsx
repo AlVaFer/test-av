@@ -9,18 +9,20 @@ const PodcastEpisodeCard = ({ currentTrack }) => (
   <Card sx={styles.card}>
     <CardContent sx={styles.cardContent}>
       <h3>{currentTrack?.trackName}</h3>
-      {currentTrack?.shortDescription ? (
-        <>
-          <h4>{currentTrack?.shortDescription}</h4>
-          <br />
-        </>
-      ) : null}
-      <Linkify as="p" options={linkifyOptions}>
+      {currentTrack?.shortDescription
+        ? (
+          <>
+            <h4>{currentTrack?.shortDescription}</h4>
+            <br />
+          </>
+          )
+        : null}
+      <Linkify as='p' options={linkifyOptions}>
         {currentTrack?.description}
       </Linkify>
       <CardMedia
         sx={styles.cardmedia}
-        component="audio"
+        component='audio'
         controls
         src={currentTrack?.episodeUrl}
         alt={currentTrack?.episodeName}

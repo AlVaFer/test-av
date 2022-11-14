@@ -18,16 +18,16 @@ const PodcastDetailEpisodesList = ({ tracksData }) => {
 
   return (
     <TableContainer component={Paper} sx={styles.tableContainer}>
-      <Table sx={styles.table} size="large" aria-label="tracks">
+      <Table sx={styles.table} size='large' aria-label='tracks'>
         <TableHead>
           <TableRow>
             <TableCell>
               <strong>{t('episodes.title')}</strong>
             </TableCell>
-            <TableCell align="left">
+            <TableCell align='left'>
               <strong>{t('episodes.date')}</strong>
             </TableCell>
-            <TableCell align="left">
+            <TableCell align='left'>
               <strong>{t('episodes.duration')}</strong>
             </TableCell>
           </TableRow>
@@ -37,17 +37,17 @@ const PodcastDetailEpisodesList = ({ tracksData }) => {
             tracks.map((track) => {
               return (
                 <TableRow key={track.trackId} sx={styles.tableRow}>
-                  <TableCell component="th" scope="row">
+                  <TableCell component='th' scope='row'>
                     <Link
                       to={`/podcast/${track.collectionId}/episode/${track.trackId}`}
                     >
                       {track.trackName}
                     </Link>
                   </TableCell>
-                  <TableCell align="left">
+                  <TableCell align='left'>
                     {dateFormat(track.releaseDate)}
                   </TableCell>
-                  <TableCell align="left">
+                  <TableCell align='left'>
                     {millisToTime(track.trackTimeMillis)}
                   </TableCell>
                 </TableRow>

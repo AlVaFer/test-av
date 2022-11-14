@@ -6,10 +6,10 @@ import PodcastEpisode from '../pages/PodcastEpisode'
 export const PodcasterRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<Podcasts />} />
-      <Route path="/podcast/:podcastId" element={<Podcast />} />
+      <Route path='/' element={<Podcasts />} />
+      <Route path='/podcast/:podcastId' element={<Podcast />} />
       <Route
-        path="/podcast/:podcastId/episode/:episodeId"
+        path='/podcast/:podcastId/episode/:episodeId'
         element={<PodcastEpisode />}
       />
     </Routes>

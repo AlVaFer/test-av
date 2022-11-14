@@ -20,6 +20,7 @@
     "prettier": "^2.7.1",
     "sass": "^1.50.1",
     "sass-loader": "^12.6.0",
+    "standard": "^17.0.0",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.8.1"
@@ -57,15 +58,12 @@
     "analyze": "webpack --env production --analyze",
     "test": "jest --watchAll=true --verbose=false --coverage=false --reporters=default",
     "test:ci": "jest --ci --coverage=false",
-    "lint": "eslint --ext js,jsx src/ && stylelint src/**/*.scss",
+    "lint": "eslint --ext js,jsx src/",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc.js",
     "jsdoc": "jsdoc -c jsdoc.json"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["./node_modules/standard/eslintrc.json"]
   },
   "browserslist": {
     "production": [

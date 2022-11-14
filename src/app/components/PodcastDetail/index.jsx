@@ -10,9 +10,9 @@ import './styles.scss'
  * @returns {JSX.Element}
  */
 const PodcastDetail = ({ podcastId, tracksData }) => (
-  <div className="detail">
+  <div className='detail'>
     <SidedCard podcastId={podcastId} />
-    <div className="detail__column">
+    <div className='detail__column'>
       <PodcastDetailHeader tracksData={tracksData} />
       <PodcastDetailEpisodesList tracksData={tracksData} />
     </div>

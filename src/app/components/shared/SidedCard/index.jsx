@@ -27,8 +27,8 @@ const SidedCard = ({ podcastId }) => {
           >
             <CardMedia
               sx={{ borderRadius: 1 }}
-              component="img"
-              height="240"
+              component='img'
+              height='240'
               image={podcast['im:image'][2].label}
               alt={podcast['im:name'].label}
             />
@@ -40,7 +40,7 @@ const SidedCard = ({ podcastId }) => {
           </h6>
           <hr />
           <h5>{t('sidedCard.description')}</h5>
-          <p>{podcast['summary'].label}</p>
+          <p>{podcast.summary.label}</p>
         </CardContent>
       </Card>
     </CardWrapper>
