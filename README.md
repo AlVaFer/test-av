@@ -8,12 +8,12 @@ IMPORTANT:
 
 ***************************
 
-In order to use the service Cors Anywhere actually we need to visit [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo) and click on the "Request temporary access to the demo server" button to temporarily init or restore the full functionality of CORS Anywhere for your client only. After pressing the button you should see the message 'You currently have temporary access to the demo server'.
+In order to use the service Cors Anywhere, actually we need to visit [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo) and click on the "Request temporary access to the demo server" button to temporarily init or restore the full functionality of CORS Anywhere for your client only. After pressing the button you should see the message 'You currently have temporary access to the demo server'.
 
 ***************************
 
 
-This project is a Single Page Application programmed in React and presents three screens: In the main screen you can watch a list of the 100 most popular Apple podcasts, also you can filter them using the textbox and see in a badge the count of results. The second screen is a detail page of the selected podcast and a list of its tracks. The third is a detail page of the selected track and here you can listen the audio of the podcast and read about its content.
+This project is a Single Page Application programmed in React and presents three screens: In the main screen you can watch a list of the 100 most popular Apple podcasts and also you can filter them using the textbox and see in a badge the count of results. The second screen is a detail page of the selected podcast and a list of its tracks. The third is a detail page of the selected track and here you can listen the audio of the podcast and read about its content.
 
 Almost each component has been styled with a different technique (sass, styled components, mui, bootstrap, etc). The design of the screens are responsive.
 
