@@ -83,6 +83,11 @@ I have made tests and documentation with JSDoc for some components. You can read
 
 * `npm run test`
 
+### Run ESLint
+
+* `npm run lint`
+
+
 ### Documents
 
 To read them please click on documents/index.html
