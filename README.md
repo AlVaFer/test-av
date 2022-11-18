@@ -1,4 +1,4 @@
-#  Test FrontEnd * Álvaro Vallejos  (BCNC Group)
+#  Test FrontEnd * AV
 
 <br>
 
